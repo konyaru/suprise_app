@@ -1,16 +1,17 @@
 import React from 'react';
+import { Link,MemoryRouter } from 'react-router-dom';
 import { PRESENTS } from './constants';
+import Present from './Present.jsx';
 
-export const Hint = ({hintsIndex, isClicked, onClick}) => {
-  const presentHint = PRESENTS[hintsIndex].hint;
-  const hint_text = isClicked == true ?
-    presentHint :
-    'ヒント';
+export const Hint = ({presentId}) => {
+  const presentHint = PRESENTS[presentId-1].hint;
+
+  
   return(
-    <button
-      onClick={onClick}
-    >
-      {hint_text}
-    </button>
+    <div>
+      <Link to={`/present/${presentId}`} >
+        {presentHint}
+      </Link>
+    </div>
   );
 }
