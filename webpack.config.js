@@ -25,7 +25,7 @@ module.exports = {
     //html-webpack-plugin の設定
     new HtmlWebpackPlugin({
       //<title> 要素を指定
-      title: 'ゴブレットゴブラーズ',
+      title: 'サプライズガチャ',
       //ファイル末尾にハッシュを追加
       hash: true,
     }),
@@ -97,8 +97,11 @@ module.exports = {
   },
   //webpack-dev-server の設定
   devServer: {
+    // Routingを許可
+    historyApiFallback: true,
     //ルートディレクトリの指定
-    contentBase: path.join(__dirname, 'dist'),
+    publicPath: "/",
+    contentBase: path.join(__dirname, 'public'),
     //サーバー起動時にブラウザを自動的に起動
     open: true,
     // ルートディレクトリのファイルを監視
@@ -107,5 +110,7 @@ module.exports = {
     port: 3000,
     //バンドルされたファイルを出力する（実際に書き出す）には以下のコメントアウトを外す
     //writeToDisk: true
+    // リスエストから直接ファイルをみることを許可
+    contentBasePublicPath: '/public',
   }
 };
