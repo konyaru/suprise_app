@@ -17,7 +17,7 @@ export const Main = () => {
     <div>
       <Grid container alignItems="center" justify="center">
         <Grid item alignItems="center" justify="center" xs={12} >
-        <h3>ボタンを押すと4つのプレゼントのヒントが出てくるよ!</h3>
+        <h3>ヒントをクリックするとプレゼントが当選するよ！</h3>
         </Grid>
         <Grid item>
         {PRESENTS.map((present) =>
