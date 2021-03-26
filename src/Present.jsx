@@ -32,7 +32,7 @@ export const Present = ({match}) => {
   return(
     <div>
       <Grid container alignItems="center" justify="center">
-        <Grid item alignItems="center" justify="center" xs={10} md={5} >
+        <Grid item alignItems="center" justify="center" xs={10} md={4} >
           <h2><span>本田さんおめでとう！</span></h2>
           {renderContent(present, true)}
         </Grid>

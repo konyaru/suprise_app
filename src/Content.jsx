@@ -17,8 +17,8 @@ export const Content = ({present, isHit}) => {
           src={`${window.location.origin}/public/${present.imgUrl}`} 
           alt={`${present.name}の画像`}
           id={`${content}_img`}
-        />
-        <p>{present.name}</p>
+      />
+      <p>{present.name}</p>
     </Fragment>
   );
 };

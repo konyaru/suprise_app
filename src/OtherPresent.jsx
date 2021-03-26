@@ -7,8 +7,8 @@ export const OtherPresent = ({present}) => {
       <img 
           src={`${window.location.origin}/public/${present.imgUrl}`} 
           alt={`${present.name}の画像`}
-        />
-        <p>{present.name}</p>
+      />
+      <p>{present.name}</p>
     </Card>
   );
 };

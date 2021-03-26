@@ -1,6 +1,6 @@
 import React from 'react';
 import { Main } from './Main.jsx';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import { Present } from './Present.jsx';
 import { createStyles, makeStyles } from '@material-ui/styles';
 
@@ -22,7 +22,7 @@ function App() {
         <Route exact path="/" component={Main}/>
         <Route
           exact
-          path='/present/:presentId'
+          path='/presents/:presentId'
           render={({match}) =>
             <Present 
               match={match}
