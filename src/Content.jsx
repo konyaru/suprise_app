@@ -8,7 +8,7 @@ export const Content = ({present}) => {
   return(
     <Card>
       <img 
-          src={production_image} 
+          src={`${present.imgUrl}`} 
           alt={`${present.name}の画像`}
           id={"present_img"}
       />

@@ -9,7 +9,7 @@ export const OtherPresent = ({present}) => {
   return(
     <StyledCard alignItems="center" >
       <img 
-          src={production_image} 
+          src={`${present.imgUrl}`} 
           alt={`${present.name}の画像`}
       />
       <p>{present.name}</p>
