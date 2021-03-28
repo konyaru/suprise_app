@@ -8,5 +8,5 @@ export const HINTSCOLORS = {1: "#B77EB5",
                             4: "#A2E3F7"
                           };
 
-export const DEVELOPMENT_IMAGES_DIR = `${window.location.origin}/public/`;
-export const PRODUCTION_IMAGES_DIR = "/public/images/";
+export const DEVELOPMENT_PUBLIC_DIR = `${window.location.origin}/public/`;
+export const PRODUCTION_PUBLIC_DIR = "/public/";
