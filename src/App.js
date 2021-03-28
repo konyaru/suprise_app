@@ -15,7 +15,6 @@ import { createStyles, makeStyles } from '@material-ui/styles';
 // );
 
 function App() {
-  // const classes = useStyles();
   return(
     <Router>
       <Switch>
@@ -35,3 +34,4 @@ function App() {
 }
 
 export default App;
+

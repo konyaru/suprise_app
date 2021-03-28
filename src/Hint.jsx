@@ -1,7 +1,6 @@
 import React from 'react';
-import { Link,MemoryRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { PRESENTS, HINTSCOLORS } from './constants';
-import Present from './Present.jsx';
 import styled from 'styled-components';
 
 export const Hint = ({presentId}) => {

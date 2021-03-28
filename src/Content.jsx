@@ -1,24 +1,15 @@
-import { Grid } from '@material-ui/core';
-import React, { Fragment } from 'react';
-import name from '@material-ui/styles/';
+import React from 'react';
+import { Card } from '@material-ui/core';
 
-export const Content = ({present, isHit}) => {
-  const content = isHit ?
-                  "present" :
-                  "other_present";
-  
-  const md = isHit ?
-             8 :
-             3;
-  
+export const Content = ({present}) => {
   return(
-    <Fragment>
+    <Card>
       <img 
           src={`${window.location.origin}/public/${present.imgUrl}`} 
           alt={`${present.name}の画像`}
-          id={`${content}_img`}
+          id={"present_img"}
       />
       <p>{present.name}</p>
-    </Fragment>
+    </Card>
   );
 };

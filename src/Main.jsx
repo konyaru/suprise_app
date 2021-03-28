@@ -1,10 +1,9 @@
-import React, { Fragment, useState } from 'react';
+import React from 'react';
 import { Hint } from './Hint.jsx'
 import { Grid } from '@material-ui/core';
 import { PRESENTS } from './constants';
 
 export const Main = () => {
-
   const renderHint = (presentId) => {
     return (
       <Hint 
