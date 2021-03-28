@@ -9,4 +9,4 @@ export const HINTSCOLORS = {1: "#B77EB5",
                           };
 
 export const DEVELOPMENT_IMAGES = `${window.location.origin}/public/`;
-export const PRODUCTION_IMAGES = "/images/";
+export const PRODUCTION_IMAGES = "/public/images/";
